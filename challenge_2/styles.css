@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.father-box {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+}
+
+.box:hover:nth-child(2) {
+  background-color: red;
+}
