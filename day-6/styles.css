@@ -25,7 +25,6 @@ body {
   align-items: center;
   animation: 1s spinDots infinite;
 }
-/*first-delay 0.25sec spin 0.75sec*/
 .dot {
   background-color: white;
   width: 10px;
