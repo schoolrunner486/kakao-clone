@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  animation: 1s spinDots infinite;
+  animation: 1s spinDots infinite ease-in-out;
 }
 .dot {
   background-color: white;
@@ -61,35 +61,27 @@ body {
   background-color: white;
   width: 12px;
   height: 40px;
-}
-.stick:first-child {
-  animation: waveStick 5s infinite;
+  animation: waveStick 1s infinite ease-in-out;
 }
 .stick:nth-child(2) {
-  animation: waveStick 5s infinite;
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 .stick:nth-child(3) {
-  animation: waveStick 5s infinite;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 .stick:nth-child(4) {
-  animation: waveStick 5s infinite;
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 .stick:nth-child(5) {
-  animation: waveStick 5s infinite;
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
 }
 @keyframes waveStick {
   0%,
-  20% {
-    transform: scale(1, 1);
-  }
-  10% {
-    transform: scale(1, 3);
-  }
+  50%,
   100% {
-    transform: scale(1, 1);
+    transform: none;
+  }
+  25% {
+    transform: scale(1, 3);
   }
 }
