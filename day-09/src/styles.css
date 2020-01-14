@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product {
+  background-color: white;
+  width: 40%;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 30px;
+}
+
+.product__img {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.product__name,
+.product__explain {
+  margin-bottom: 10px;
+}
+
+.product__explain {
+  opacity: 0.5;
+}
+
+.product__name,
+.product__price {
+  font-family: "roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.product__detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-star i {
+  color: yellow;
+}
+
+.score-star {
+  opacity: 0.6;
+}
+
+/* profile */
+
+.profile {
+  position: relative;
+  width: 40%;
+  height: 1000px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 40%;
+}
+
+.header > .profile-img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile__info {
+  width: 100%;
+  height: 60%;
+}
+
+.profile-img {
+  z-index: 1;
+  position: absolute;
+  top: 400px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn__Follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6a75ff;
+  width: 200px;
+  height: 70px;
+  color: #eaecff;
+}
+
+.btn__message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaecff;
+  width: 200px;
+  height: 70px;
+  color: #6a75ff;
+}
