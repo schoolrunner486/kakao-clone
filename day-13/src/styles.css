@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: sans-serif;
+  background-color: #2595f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  width: 400px;
+  height: 700px;
+  padding: 10px 20px;
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 100%
+    ),
+    url(../src/Eevee.png);
+  background-size: cover;
+  background-color: white;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.clock {
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  opacity: 0.5;
+  margin-bottom: 130px;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.user-name {
+  color: #2799fa;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.user-location {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.btn {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.follow {
+  background-color: white;
+  color: grey;
+}
+
+.message {
+  background-color: #2799fa;
+  color: white;
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.info {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.nav-bar {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  opacity: 0.4;
+}
